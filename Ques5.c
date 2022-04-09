@@ -1,6 +1,14 @@
 /*
-Given an array of integers . design an algo and implement it using a program to find 3
-indices i , j , k i.e. arr[i] + arr[j] = arr[k]
+Given a sorted array of positive integers, design an algorithm and implement it using a program to 
+find three indices i, j, k such that arr[i] + arr[j] = arr[k].
+Input format:
+The first line contains number of test cases, T.
+For each test case, there will be two input lines.
+First line contains n (the size of array).
+Second line contains space-separated integers describing array.
+Output:
+The output will have T number of lines.
+For each test case T, print the value of i, j and k, if found else print “No sequence found”
 */
 
 
@@ -10,53 +18,61 @@ indices i , j , k i.e. arr[i] + arr[j] = arr[k]
 
 int main()
 {
-    printf("\n\nCODE BY: DEVANSH GOEL, SECTION G, 4TH SEM, STUDENT ID: 20011990, GRAPHIC ERA HILL UNIVERSITY\n\n");
-    int n;
+    int t;
+    //printf("Enter number of test cases:");
+    scanf("%d",&t);
 
-    printf("Enter size of array:");
-    scanf("%d",&n);
-
-    int arr[n];
-    printf("Enter elements of array:");
-
-    int i;
-    for(i=0;i<n;i++)
+    while(t>0)
     {
-        scanf("%d",arr+i);
-    }
+        //printf("\n\nCODE BY: DEVANSH GOEL, SECTION G, 4TH SEM, STUDENT ID: 20011990, GRAPHIC ERA HILL UNIVERSITY\n\n");
+        int n;
 
-    int check=0;
+        //printf("Enter size of array:");
+        scanf("%d",&n);
 
-    printf("\n\nAll possible pairs of i,j and k are:\n\n");
+        int arr[n];
+        //printf("Enter elements of array:");
 
-    for(i=0;i<n;i++)
-    {
-        int j;
-        for(j=0;j<n;j++)
+        int i;
+        for(i=0;i<n;i++)
         {
-            int k;
-            for(k=0;k<n;k++)
+            scanf("%d",arr+i);
+        }
+
+        int check=0;
+
+
+        for(i=0;i<n;i++)
+        {
+            int j;
+            for(j=0;j<n;j++)
             {
-                if(arr[i]+arr[j]==arr[k])
+                int k;
+                for(k=0;k<n;k++)
                 {
-                    if(check==0)
+                    if(arr[i]+arr[j]==arr[k] && (i!=j && j!=k))
                     {
-                        printf("\n\n  i  \t  j  \t  k  \t\n");
+                        if(check==0)
+                        {
+                            printf("\n%d,%d,%d",i,j,k);
+                            check=1;
+                            break;
+                        }
+                        
                     }
-                    printf("%5d\t%5d\t%5d\n",i,j,k);
-                    check=1;
                 }
             }
         }
+
+        if(check==0)
+        {
+            printf("\n\nNo sequence found");
+        }
+
+        printf("\n\n");
+
+        t--;
     }
-
-    if(check==0)
-    {
-        printf("\n\nNo such pair found !");
-    }
-
-    printf("\n\n");
-
     return 0;
 
 }

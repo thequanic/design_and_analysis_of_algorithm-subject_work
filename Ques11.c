@@ -5,6 +5,18 @@ that one of the sub array holds values smaller than the pivot element while anot
 holds values greater than the pivot element. Pivot element should be selected randomly from the
 array. Your program should also find number of comparisons and swaps required for sorting the
 array.
+
+Input Format:
+The first line contains number of test cases, T.
+For each test case, there will be two input lines.
+First line contains n (the size of array).
+Second line contains space-separated integers describing array.
+Output Format:
+The output will have T number of lines.
+For each test case T, there will be three output lines.
+First line will give the sorted array.
+Second line will give total number of comparisons.
+Third line will give total number of swaps required
 */
 
 #include <stdio.h>
@@ -57,19 +69,19 @@ void quick_sort(int arr[], int low, int high,int *comp, int *swaps)
 int main()
 {
     int t;
-    printf("Enter number of test cases:");                  //test cases
+    //printf("Enter number of test cases:");                  //test cases
     scanf("%d",&t);
 
     while(t>0)
     {
         int n;
-        printf("Enter size of array:");
+       // printf("Enter size of array:");
         scanf("%d",&n);
 
         int i;
         int arr[n];
 
-        printf("Enter elements of array:");
+       // printf("Enter elements of array:");
         for(i=0;i<n;i++)
         {
             scanf("%d",&arr[i]);
@@ -79,14 +91,14 @@ int main()
         quick_sort(arr,0,n-1,&comp,&swaps);
 
 
-        printf("\nSorted array:");
+        //printf("\nSorted array:");
         for(i=0;i<n;i++)
         {
             printf("%d ",arr[i]);
         }
 
 
-        printf("\n\nNumber of compare: %d Number of swaps: %d\n\n",comp,swaps);
+        printf("\ncomparisons:=%d \nswaps=%d\n",comp,swaps);
 
 
         t--;
