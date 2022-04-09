@@ -17,6 +17,7 @@ If no Kth element is present, output should be “not present”.
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int main()
 {
 
@@ -24,9 +25,10 @@ int main()
     printf("Enter number of test cases:");
     scanf("%d",&test);
 
-    while(t>0)
+    while(test>0)
     {
-        t--;
+
+        test--;
     }
 
     
