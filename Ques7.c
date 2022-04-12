@@ -4,7 +4,7 @@ insertion sort. Your program should be able to find number of comparisons and sh
 total number of times the array elements are shifted from their place) required for sorting the array.
 Input Format:
 The first line contains number of test cases, T.
-For each test case, there will be two input lines.
+For each test case, there will be two input lines.   
 First line contains n (the size of array).
 Second line contains space-separated integers describing array.
 Output Format:

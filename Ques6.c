@@ -20,7 +20,7 @@ For each test case T, output will be the total count i.e. number of times such p
 int main()
 {
     int t;
-    printf("Enter number of test cases:");
+    //printf("Enter number of test cases:");
     scanf("%d",&t);
     while(t>0)
     {

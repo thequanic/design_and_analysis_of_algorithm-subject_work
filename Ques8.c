@@ -54,7 +54,7 @@ int main()
                 
                 }
             }
-
+   
             int temp=arr[i-1];
             arr[i-1]=arr[min_index];
             arr[min_index]=temp;

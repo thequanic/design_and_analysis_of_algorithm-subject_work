@@ -91,7 +91,7 @@ int main()
         quick_sort(arr,0,n-1,&comp,&swaps);
 
 
-        //printf("\nSorted array:");
+        //printf("\nSorted array:");  
         for(i=0;i<n;i++)
         {
             printf("%d ",arr[i]);

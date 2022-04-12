@@ -85,7 +85,7 @@ int merge_sort(int arr[], int l, int r,int *comp)
     {
        
         int m = l + (r - l) / 2;
- 
+   
         inv_count+=merge_sort(arr, l, m,comp);
         inv_count+=merge_sort(arr, m + 1, r,comp);
   
@@ -129,4 +129,4 @@ int main()
     }
     
     return 0;
-}
+}   

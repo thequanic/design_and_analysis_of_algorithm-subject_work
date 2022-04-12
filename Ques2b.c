@@ -61,7 +61,7 @@ int binary_search(int low, int high, int arr[], int key ,int comp)
 
 int main()
 {
-    printf("\n\nCODE BY: DEVANSH GOEL, SECTION G, 4TH SEM, STUDENT ID: 20011990, GRAPHIC ERA HILL UNIVERSITY\n\n");
+   // printf("\n\nCODE BY: DEVANSH GOEL, SECTION G, 4TH SEM, STUDENT ID: 20011990, GRAPHIC ERA HILL UNIVERSITY\n\n");
     
     int t;  //test cases
     scanf("%d",&t);
@@ -69,11 +69,11 @@ int main()
     {
         int n;
 
-        printf("Enter size of array:");
+        //printf("Enter size of array:");
         scanf("%d",&n);
 
         int arr[n];
-        printf("Enter elements of array:");
+        //printf("Enter elements of array:");
 
         int i;
         for(i=0;i<n;i++)
@@ -82,7 +82,7 @@ int main()
         }
 
         int key;
-        printf("Enter element to be searched::");
+        //printf("Enter element to be searched::");
         scanf("%d",&key);
 
         //binary search
@@ -97,4 +97,4 @@ int main()
 
     return 0;
 
-}
+} 

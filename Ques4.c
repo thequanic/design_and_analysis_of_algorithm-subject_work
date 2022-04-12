@@ -27,7 +27,7 @@ int binary_search(int low, int high, int arr[], int key,int count)
         count++;
         count=binary_search(low,mid-1,arr,key,count);
         count=binary_search(mid+1,high,arr,key,count);
-        return count;
+        return count;    
 
     }
 
