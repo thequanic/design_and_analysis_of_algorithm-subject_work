@@ -34,7 +34,7 @@ int merge_sorted(int arr[],int l,int m, int r,int *comp)
         R[j] = arr[m + 1 + j];
   
 
-    i = 0;
+    i = 0; 
     j = 0; 
     k = l;
     int inv_count=0;

@@ -45,7 +45,7 @@ int partition(int arr[],int low, int high, int * comp, int*swaps)
             swap(&arr[i],&arr[j]);
             (*swaps)++;
      
-        }
+        } 
     }
 
     swap(&arr[high],&arr[i+1]);

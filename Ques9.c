@@ -1,9 +1,5 @@
 /* 
-Given an unsorted array of positive integers, design an algorithm and implement it using a program 
-to find whether there are any duplicate elements in the array or not. (use sorting) (Time Complexity 
-= O(n log n))
-Input Format:
-The first line contains number of test cases, T.
+Give  test cases, T.
 For each test case, there will be two input lines.
 First line contains n (the size of array).
 Second line contains space-separated integers describing array.
